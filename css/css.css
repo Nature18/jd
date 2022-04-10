@@ -1,0 +1,164 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset/*fieldset 元素可将表单内的相关元素分组*/,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td
+{
+  margin:0;
+  padding:0;
+  outline: 0;
+  /*outline （轮廓）是绘制于元素周围的一条线，位于边框边缘的外围，可起到突出元素的作用。*/
+  font:inherit;
+  /*inherit 关键字指定一个属性应从父元素继承它的值。*/
+    vertical-align: baseline;/*baseline 默认。元素放置在父元素的基线上。*/
+}
+ 
+body {
+  font: 12px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+  color: #333;
+  min-width: 1226px
+}
+ 
+a{
+  color:#555;
+  text-decoration: none;
+}
+ 
+a:hover{
+  text-decoration: underline;
+}
+ 
+img{
+  border:none;
+}
+ 
+ol,ul,li{
+  list-style: none;
+}
+ 
+table{
+  border-collapse: collapse;/*为表格设置合并边框模型*/
+}
+ 
+/************共用样式***********/
+ 
+ 
+/*清除盒子浮动*/
+ 
+.clear:after{
+  content: ".";
+  display: block;;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+ /*zoom:1让IE6的元素可以清除浮动来包裹内部元素*/
+.clearfix{
+  zoom:1;
+}
+ 
+.clearfix:before,clearfix:after{
+  content:"";
+  display:table;
+}
+ 
+.clearfix:after{
+  clear: both;
+}
+
+.fl{
+  float: left;
+}
+ 
+.fr{
+  float: right;
+}
+ 
+/***************共用背景**********/
+ 
+.web-icon{
+  background-image: url(../images/icon.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+ 
+.ico{
+  width:15px;
+  height:16px;
+  background-position: 3px 5px;
+  position:relative;
+  top: 3px;
+}
+
+/************上面是样式重置************/
+
+.header{
+    width: 100%;
+    height: 30px;
+    background-color: #e3e4e5;
+    border-bottom: 1px solid #ddd;
+}
+.header .wrap{
+    width: 1190px;
+    margin: 0 auto;
+    line-height: 30px;
+    color: #999;
+}
+.header .address{
+    float: left;
+    position: relative;
+}
+.header .address .iconfont-address{
+    width: 14px;
+    height: 15px;
+    display: inline-block;
+    background-image: url(../images/iconfont-adress.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 7px;
+}
+
+.address span{
+    margin-left: 18px;
+}
+
+.header .wrap .menu {
+    float: right;
+}
+
+.header .menu ul li{
+    float: left;
+    padding: 0 17px;
+    position: relative;
+}
+
+.header .menu ul li a{
+    float: left;
+    padding: 0 17px;
+}
+
+.header .menu li .span{
+    
+}
